@@ -10,7 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6773a71d7085015479a0a9b83d1f810a, type: 3}
-  m_Name: Hapababa test
+  m_Name: It's not yours
   m_EditorClassIdentifier: 
-  Subtitles: habapasdfa
-  AudioClip: {fileID: 8300000, guid: 5a0dac778a6a6e84aa2107dd9a1b2ed8, type: 3}
+  Subtitles: it's not yours.
+  AudioClip: {fileID: 8300000, guid: 9c034119478a67841b33f1bc37380a36, type: 3}
+  _delayToNextAudio: 0.3

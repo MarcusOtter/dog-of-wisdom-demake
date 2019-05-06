@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6773a71d7085015479a0a9b83d1f810a, type: 3}
+  m_Name: If your ball
+  m_EditorClassIdentifier: 
+  Subtitles: If your ball
+  AudioClip: {fileID: 8300000, guid: 42c3d72526b90ab41934d3dfaa52b254, type: 3}
+  _delayToNextAudio: 0.3

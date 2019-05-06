@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Collections;
 
 [RequireComponent(typeof(AudioSource))]
 public class AudioPlayer : MonoBehaviour
@@ -6,10 +7,11 @@ public class AudioPlayer : MonoBehaviour
     internal bool IsBorking => _currentVolumeBeingPlayed > _borkVolumeThreshhold;
 
     [Header("Audio settings")]
-    [SerializeField] private int _sampleRate = 1024;
-    [SerializeField] private float _borkVolumeThreshhold = 0.2f;
+    [SerializeField] private int _sampleRate = 4096;
+    [SerializeField] private float _borkVolumeThreshhold = 0.05f;
 
     [Header("Subtitled audio to play")]
+    [SerializeField] private float _initialDelay;
     [SerializeField] private SubtitledAudio[] _audioToPlay;
 
     private AudioSource _audioSource;
@@ -21,6 +23,19 @@ public class AudioPlayer : MonoBehaviour
     {
         _samples = new float[_sampleRate];
         _audioSource = GetComponent<AudioSource>();
+
+        StartCoroutine(PlaySubtitledAudio());
+    }
+
+    private IEnumerator PlaySubtitledAudio()
+    {
+        yield return new WaitForSeconds(_initialDelay);
+
+        foreach (var audio in _audioToPlay)
+        {
+            _audioSource.PlayOneShot(audio.AudioClip);
+            yield return new WaitForSeconds(audio.Duration);
+        }
     }
 
     private void Update()
