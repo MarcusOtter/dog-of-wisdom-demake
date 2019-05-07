@@ -1,10 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
+using TMPro;
 
 [RequireComponent(typeof(AudioSource))]
 public class AudioPlayer : MonoBehaviour
 {
     internal bool IsBorking => _currentVolumeBeingPlayed > _borkVolumeThreshhold;
+
+    [Header("References")]
+    [SerializeField] private TextMeshProUGUI _subtitles;
 
     [Header("Audio settings")]
     [SerializeField] private int _sampleRate = 4096;
@@ -33,9 +37,18 @@ public class AudioPlayer : MonoBehaviour
 
         foreach (var audio in _audioToPlay)
         {
-            _audioSource.PlayOneShot(audio.AudioClip);
+            SetSubtitles(audio.Subtitles);
+            _audioSource.PlayOneShot(audio.AudioClip, audio.Volume);
             yield return new WaitForSeconds(audio.Duration);
         }
+    }
+
+    private void SetSubtitles(string text)
+    {
+        if (_subtitles == null) { return; }
+        if (string.IsNullOrWhiteSpace(text)) { return; }
+
+        _subtitles.text = text;
     }
 
     private void Update()

@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Subtitles: wisdom tooth.
   AudioClip: {fileID: 8300000, guid: b05ac440b0244054e8ee1c0a6e2d8671, type: 3}
-  _delayToNextAudio: 2
+  Volume: 1
+  _delayToNextAudio: 4.5

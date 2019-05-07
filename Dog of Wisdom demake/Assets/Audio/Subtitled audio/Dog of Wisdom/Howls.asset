@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Subtitles: 
   AudioClip: {fileID: 8300000, guid: 47a3ae14d1446664c9376186754cb565, type: 3}
+  Volume: 0.3
   _delayToNextAudio: 0.3

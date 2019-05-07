@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Subtitles: Who's that.
   AudioClip: {fileID: 8300000, guid: 3b81f98880aa6d74b90b029d3d680485, type: 3}
-  _delayToNextAudio: 0.3
+  _delayToNextAudio: 0

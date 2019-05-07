@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Subtitles: Coming up over the horizon in my sky.
   AudioClip: {fileID: 8300000, guid: 6b12792f107a120428c4d1c5a4a45071, type: 3}
-  _delayToNextAudio: 0.3
+  _delayToNextAudio: 0

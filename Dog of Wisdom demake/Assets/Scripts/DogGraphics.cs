@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-[RequireComponent(typeof(SpriteRenderer))]
+[RequireComponent(typeof(SpriteRenderer), typeof(Animator))]
 public class DogGraphics : MonoBehaviour
 {
     [SerializeField] private AudioPlayer _borkingAudioPlayer;

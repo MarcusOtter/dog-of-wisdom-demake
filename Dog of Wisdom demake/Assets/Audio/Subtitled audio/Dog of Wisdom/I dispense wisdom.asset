@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Subtitles: I dispense wisdom
   AudioClip: {fileID: 8300000, guid: e898abe98225a3e47b7c22aaa5a8fbad, type: 3}
-  _delayToNextAudio: 0.3
+  _delayToNextAudio: 0

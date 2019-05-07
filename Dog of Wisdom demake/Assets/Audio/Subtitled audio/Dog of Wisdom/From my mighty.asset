@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Subtitles: from my mighty
   AudioClip: {fileID: 8300000, guid: 07d61f40abb7bed44a2422f0a5434292, type: 3}
-  _delayToNextAudio: 0.3
+  _delayToNextAudio: 0
